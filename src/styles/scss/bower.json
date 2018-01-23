@@ -1,0 +1,21 @@
+{
+  "name": "scss",
+  "homepage": "none",
+  "authors": [
+    "jimmy <jimmyjconnelly@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gel-grid": "^3.0.5"
+  }
+}
