@@ -32,7 +32,8 @@ function SentimentInfo(props) {
                     <h2 className="gel-layout gel-layout--center gs-u-m+">Try and see if you can make me smile</h2>
                     <p  className="gel-layout gel-layout--center gs-u-m"> Input any word or phrase below.</p>
                     <p className="gel-layout gel-layout--center gs-u-m"> I'll give a happiness score  for the last 100 tweets containing that text.</p>
-                    <p className="gel-layout gel-layout--center gs-u-m">A score above 0.5 will make me smile, a score below -0.5 will make me sad.</p>
+                    <p className="gel-layout gel-layout--center gs-u-m">A score above 0.5 will make me smile.</p>
+                    <p className="gel-layout gel-layout--center gs-u-m"> a score below -0.5 will make me sad.</p>
                     <p className="gel-layout gel-layout--center gs-u-m">A score in the middle will not change my expression.</p>
                     
                 </div>
