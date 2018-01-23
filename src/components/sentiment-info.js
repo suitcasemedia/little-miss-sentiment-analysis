@@ -19,6 +19,7 @@ function SentimentInfo(props) {
                     return
             }
         }
+        
         if (  score ){
             return(
                 <div style={{marginTop: '1em', marginLeft:'auto',marginRight:'auto', width:'80%'}}>
