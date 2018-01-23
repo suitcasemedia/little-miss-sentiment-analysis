@@ -45,9 +45,9 @@ function SentimentInfo(props) {
             return (
                 <div>
                     <h1 className="gel-layout gel-layout--center gs-u-m+">
-                    Hello Im Little Miss Sentiment Analysis
+                    Hello I'm Little Miss Sentiment Analysis
                     </h1>
-                    <h2 className="gel-layout gel-layout--center gs-u-m+">Try and see if you can make me smile</h2>
+                    <h2 className="gel-layout gel-layout--center gs-u-m+">Try and see if you can make me smile.</h2>
                     <p  className="gel-layout gel-layout--center gs-u-m"> Input any word or phrase below.</p>
                     <p className="gel-layout gel-layout--center gs-u-m"> I'll give a happiness score  for the last 100 tweets containing that text.</p>
                     <p className="gel-layout gel-layout--center gs-u-m"> A score below -0.5 will make me sad.</p>
