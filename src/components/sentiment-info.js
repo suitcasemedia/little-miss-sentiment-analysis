@@ -1,11 +1,28 @@
 import React from  'react';
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 function SentimentInfo(props) {
     
         const {subject, score, sentiment} = props;
+        const notify = (sentiment) =>{
+            switch(sentiment) {
+                case 'positive':
+                NotificationManager.info( "You did it", "Hooraye! ", 2500 );
+                    break;
+                case 'neutral':
+                NotificationManager.warning( "Can you think of something happier ?", "Hmmm", 2500 );
+                    break;
+                case 'negative':
+                NotificationManager.error( "That's so sad...", "Oh dear", 2500 );
+                default:
+                    return
+            }
+        }
         if (  score ){
             return(
                 <div style={{marginTop: '1em', marginLeft:'auto',marginRight:'auto', width:'80%'}}>
+                    {notify(sentiment)}
                    
                     <div className="gel-layout gel-layout--center">
                         <div className="gel-layout__item gel-10/12@xxl">
