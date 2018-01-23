@@ -40,7 +40,7 @@ class MoodApp extends Component {
              subject={subject}
              sentiment={sentiment}
           />
-          <div style={{width: '100%',height: '300px'}} >
+          <div style={{margin:'auto',height: '200px'}} >
             <SvgFace sentiment={sentiment} />    
           </div>
           <SearchBar/>

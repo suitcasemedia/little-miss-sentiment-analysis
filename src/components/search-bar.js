@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'
 import {fetchData} from '../actions/index'
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
  
 
 class SearchBar extends Component{
@@ -11,22 +13,29 @@ class SearchBar extends Component{
         this.state = {term: ''};
         this.onInputChange = this.onInputChange.bind(this);
         this.onFormSubmit = this.onFormSubmit.bind(this);
+        
     }
     onInputChange(event){
         console.log(event.target.value)
         this.setState({term: event.target.value})
-
-
+       
     }
     onFormSubmit(event){
         event.preventDefault();
-
+        NotificationManager.info( this.state.term, "Fetching a  100 tweets with  ", 2500 );
         // we need to get and fetch data
         this.props.fetchData(this.state.term, ()=>{
             //call back function goes here
+          
+            
         })
+       
+       
         this.setState({term: ''});
+        
     }
+
+    
     render(){
         return(
             <div className="gel-wrap  gs-u-clearfix gs-u-mt+ gs-u-pt++" style={{background:'#ccc'}}>
@@ -46,8 +55,9 @@ class SearchBar extends Component{
                     </form>
                     
                 </div>
+                <NotificationContainer/>
             </div>
-    
+            
         )
 
 
@@ -59,4 +69,4 @@ function mapDispatchToProps(dispatch){
         return bindActionCreators({fetchData}, dispatch)
     }
     
-    export default connect(null, mapDispatchToProps)(SearchBar)
+export default connect(null, mapDispatchToProps)(SearchBar)
