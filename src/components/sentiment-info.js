@@ -8,7 +8,7 @@ function SentimentInfo(props) {
         const notify = (sentiment) =>{
             switch(sentiment) {
                 case 'positive':
-                    NotificationManager.info( "You did it", "Hooraye! ", 2500 );
+                    NotificationManager.success( "You did it", "Hooraye! ", 2500 );
                     break;
                 case 'neutral':
                     NotificationManager.warning( "Can you think of something happier ?", "Hmmm", 2500 );
@@ -28,7 +28,7 @@ function SentimentInfo(props) {
                         <div className="gel-layout__item gel-10/12@xxl">
                             <div className="twitter-sentiment-demo__score">
                               
-                                <p className="gel-double-pica gs-u-mb">{subject } sentiment score: {score ?score : ''}</p>
+                                <p className="gel-double-pica gs-u-mb">"{subject }" sentiment score: {score ?score : ''}</p>
                                
                                 <h2 style={{color: 'red'}} className="gel-great-primer gs-u-mb+">{sentiment? sentiment : ''}</h2>
                                 <p className=" gs-u-mb+">You can read the tweets containing <strong>{subject}</strong> below or go again</p>
