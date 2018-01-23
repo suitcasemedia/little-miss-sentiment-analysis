@@ -8,13 +8,13 @@ function SentimentInfo(props) {
         const notify = (sentiment) =>{
             switch(sentiment) {
                 case 'positive':
-                NotificationManager.info( "You did it", "Hooraye! ", 2500 );
+                    NotificationManager.info( "You did it", "Hooraye! ", 2500 );
                     break;
                 case 'neutral':
-                NotificationManager.warning( "Can you think of something happier ?", "Hmmm", 2500 );
+                    NotificationManager.warning( "Can you think of something happier ?", "Hmmm", 2500 );
                     break;
                 case 'negative':
-                NotificationManager.error( "That's so sad...", "Oh dear", 2500 );
+                    NotificationManager.error( "That's so sad...", "Oh dear", 2500 );
                 default:
                     return
             }
