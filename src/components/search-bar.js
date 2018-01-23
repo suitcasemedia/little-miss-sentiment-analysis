@@ -35,7 +35,6 @@ class SearchBar extends Component{
         
     }
 
-    
     render(){
         return(
             <div className="gel-wrap  gs-u-clearfix gs-u-mt+ gs-u-pt++" style={{background:'#ccc'}}>

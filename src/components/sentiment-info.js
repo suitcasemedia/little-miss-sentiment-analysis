@@ -19,6 +19,8 @@ function SentimentInfo(props) {
                     return
             }
         }
+
+
         
         if (  score ){
             return(
