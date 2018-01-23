@@ -35,6 +35,7 @@ function SentimentInfo(props) {
                             </div>
                         </div>
                     </div>
+                    <NotificationContainer/>
                 </div>
                 
             )
