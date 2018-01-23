@@ -16,13 +16,13 @@ class MoodApp extends Component {
     
   }
    getSVG(sentiment) {
-    if(sentiment ==='happy'){
+    if(sentiment ==='Positive'){
       return <Happy/>
     }
-    else if(sentiment === 'neutral'){
+    else if(sentiment === 'Neutral'){
       return <Neutral />
     }
-    else if(sentiment === 'sad'){
+    else if(sentiment === 'Negative'){
       return <Sad/>
     }
     else {

@@ -6,12 +6,12 @@ import Neutral from './neutral';
 function SvgFace(props){
     const sentiment = props.sentiment;
 
-    if( sentiment === 'negative'){
+    if( sentiment === 'Negative'){
         return(
             <Sad />    
         )
     }
-    else if( sentiment === 'positive'){
+    else if( sentiment === 'Positive'){
         return(
             <Happy />
         )
